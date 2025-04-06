@@ -3,23 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>はじめてのこうせん - プレイページ</title>
+  <title>はじめてのこうせん - ゲーム紹介ページ</title>
   <style>
-    html, body {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
     }
-    iframe {
-      border: none;
+    .content {
+      width: 80%;
+      max-width: 1200px;
+      margin-top: 20px;
+    }
+    .game-container {
+      width: 100%;
+      height: 720px;
+      margin-top: 20px;
+    }
+    .game-container iframe {
       width: 100%;
       height: 100%;
+      border: none;
     }
   </style>
 </head>
 <body>
-  <iframe src="https://hajimete-kosen.netlify.app/" allowfullscreen></iframe>
+
+  <div class="content">
+    <h1>『はじめてのこうせん』</h1>
+
+    <p>『はじめてのこうせん』は令和5年度の「仙台高専キャンパスプロジェクト」にて制作された、学校紹介ノベルゲームです。</p>
+
+    <h2>操作方法</h2>
+    <ul>
+      <li>左クリック：進む、ボタン選択</li>
+    </ul>
+
+    <h2>クレジット</h2>
+    <ul>
+      <li>企画・シナリオ制作・プログラミング：プログラミング部</li>
+      <li>キャラクターイラスト制作：美術部</li>
+      <li>写真撮影：写真部</li>
+      <li>BGM制作：DTM部</li>
+    </ul>
+
+    <h2>ゲームプレイ</h2>
+    <div class="game-container">
+      <iframe src="https://hajimete-kosen.netlify.app/" allowfullscreen></iframe>
+    </div>
+  </div>
+
 </body>
 </html>
