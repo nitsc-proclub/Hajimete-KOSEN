@@ -6,15 +6,13 @@
 
 ## 🎮 プレイ方法
 
-### ▶️ ブラウザ版（インストール不要）
+### ▶️ ブラウザ版
 
 [はじめてのこうせんをブラウザでプレイする](https://hajimete-kosen.netlify.app/)
 
----
-
-### 💾 ダウンロード版（Windows）
-
-⬇️ [Windows版をダウンロード（ZIP）](ここにリリースURL)
+<a href="https://hajimete-kosen.netlify.app/">
+  <img src="https://github.com/nitsc-proclub/Hajimete-KOSEN/raw/c772d1b6d81e2e0ef84bce10e94d3a8c38849255/title.png" width="30%" />
+</a>
 
 ---
 
@@ -47,8 +45,3 @@
 - [ティラノビルダー](https://b.tyrano.jp/)（ノベルゲーム制作ツール）
 
 ---
-
-## 📝 ライセンス・注意事項
-
-- 教育目的での公開です。再配布や無断改変はご遠慮ください。
-- 不具合などがあれば、[GitHubのIssue](https://github.com/<ユーザー名>/hajimete-no-kousen/issues)にてお知らせください。
