@@ -20,18 +20,38 @@
       margin-top: 20px;
     }
     .game-container {
+      position: relative;
       width: 100%;
-      height: 720px;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
       margin-top: 20px;
+      background-color: #000;
     }
     .game-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       border: none;
     }
     .game-image {
-      width: 30%;
+      width: 100%;
+      max-width: 600px; /* 最大幅を設定 */
       margin-top: 20px;
+    }
+    .button-link {
+      display: block;
+      text-align: center;
+      width: 100%;
+      max-width: 600px; /* リンクも画像の横幅に合わせる */
+      margin: 20px auto;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -49,7 +69,7 @@
 
     <h2>🎮 プレイ方法</h2>
     <h3>▶️ ブラウザ版</h3>
-    <p><a href="https://hajimete-kosen.netlify.app/">はじめてのこうせんをブラウザでプレイする</a></p>
+    <p><a href="https://hajimete-kosen.netlify.app/" class="button-link">はじめてのこうせんをブラウザでプレイする</a></p>
 
     <!-- 画像リンク -->
     <a href="https://hajimete-kosen.netlify.app/">
