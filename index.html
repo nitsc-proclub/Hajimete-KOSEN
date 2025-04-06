@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>はじめてのこうせん - ゲーム紹介ページ</title>
+  <title>はじめてのこうせん-紹介ページ</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,6 +14,7 @@
       flex-direction: column;
       align-items: center;
       background-color: #f4f4f4;
+      font-size: 85%; /* 全体的な文字サイズを85%に設定 */
     }
     .content {
       width: 80%;
@@ -41,17 +43,50 @@
       margin-top: 20px;
     }
     .button-link {
-      display: block;
       text-align: center;
       width: 100%;
       max-width: 600px; /* リンクも画像の横幅に合わせる */
       margin: 20px auto;
       text-decoration: none;
+      font-size: 18px;
+      color: #4CAF50; /* ボタンっぽくするための色 */
+    }
+
+    /* 横画面時に文字サイズを大きくする */
+    @media screen and (orientation: landscape) {
+      body {
+        font-size: 100%; /* 横画面では文字サイズを100%に */
+      }
+    }
+
+    /* ページ下部のリンク */
+    .footer {
+      font-size: 0.8rem;
+      color: #555;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .social-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .social-buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #1DA1F2;
+      color: white;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .copy-link {
+      padding: 10px 20px;
       background-color: #4CAF50;
       color: white;
-      padding: 15px;
-      font-size: 18px;
       border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -67,19 +102,16 @@
 
     <p>『はじめてのこうせん』は、令和5年度「仙台高専キャンパスプロジェクト」にて制作された、学校紹介ノベルゲームです。</p>
 
-    <h2>🎮 プレイ方法</h2>
+    <h2>🎮 ゲームプレイ</h2>
     <h3>▶️ ブラウザ版</h3>
-    <p><a href="https://hajimete-kosen.netlify.app/" class="button-link">はじめてのこうせんをブラウザでプレイする</a></p>
+    <p><a href="https://hajimete-kosen.netlify.app/" class="button-link" target="_blank">新しいタブでプレイする↗️</a></p>
 
     <!-- 画像リンク -->
-    <a href="https://hajimete-kosen.netlify.app/">
+    <a href="https://hajimete-kosen.netlify.app/" target="_blank">
       <img src="https://github.com/nitsc-proclub/Hajimete-KOSEN/raw/c772d1b6d81e2e0ef84bce10e94d3a8c38849255/title.png" class="game-image" />
     </a>
 
     <h2>🖼️ スクリーンショット</h2>
-    <!-- 画像を入れる場合は↓のように -->
-    <!-- ![ゲーム画面](images/screenshot1.png) -->
-
     <p>（※スクリーンショットは準備中です）</p>
 
     <h2>🕹️ 操作方法</h2>
@@ -89,17 +121,43 @@
 
     <h2>📜 クレジット</h2>
     <ul>
-      <li><strong>企画・シナリオ制作・プログラミング</strong>：プログラミング部</li>
-      <li><strong>キャラクターイラスト制作</strong>：美術部</li>
-      <li><strong>写真撮影</strong>：写真部</li>
-      <li><strong>BGM制作</strong>：DTM部</li>
+      <li><strong>企画・シナリオ制作・プログラミング</strong>：仙台高専プログラミング部(広瀬)</li>
+      <li><strong>キャラクターイラスト制作</strong>：仙台高専美術部(広瀬)</li>
+      <li><strong>写真撮影</strong>：仙台高専写真部(広瀬)</li>
+      <li><strong>BGM制作</strong>：仙台高専DTM部(広瀬)</li>
     </ul>
 
     <h2>🛠️ 使用ソフト・制作環境</h2>
     <ul>
-      <li><a href="https://b.tyrano.jp/" target="_blank">ティラノビルダー</a>（ノベルゲーム制作ツール）</li>
+      <li><a href="https://b.tyrano.jp/" target="_blank">ティラノビルダー</a></li>
     </ul>
   </div>
+
+  <!-- フッター -->
+  <div class="footer">
+    <p>このページは、 <a href="https://github.com/nitsc-proclub/Hajimete-KOSEN" target="_blank">このリポジトリ</a> からできています。</p>
+
+    <div class="social-buttons">
+<!-- Twitter シェアボタン -->
+<a href="https://twitter.com/intent/tweet?url=https://hajimete-kosen.netlify.app/&text=%E3%80%8E%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E3%81%93%E3%81%86%E3%81%9B%E3%82%93%E3%80%8F%E3%82%92%E3%83%97%E3%83%AC%E3%82%A4%E3%81%97%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81%0D%0A%E2%9C%85HP%EF%BC%9Ahttps%3A%2F%2Fnitsc-proclub.github.io%2FHajimete-KOSEN%2F%0D%0A%F0%9F%8E%AE%E3%82%B2%E3%83%BC%E3%83%A0%EF%BC%9Ahttps%3A%2F%2Fhajimete-kosen.netlify.app%2F%0D%0A%23%E4%BB%99%E5%8F%B0%E9%AB%98%E5%B0%82+%23%E3%83%8E%E3%83%99%E3%83%AB%E3%82%B2%E3%83%BC%E3%83%A0+%23%E3%83%86%E3%82%A3%E3%83%A9%E3%83%8E%E3%83%93%E3%83%AB%E3%83%80%E3%83%BC+" target="_blank">Twitterでシェア</a>
+
+      <!-- リンクをコピーするボタン -->
+      <button class="copy-link" onclick="copyLink()">リンクをコピーする</button>
+    </div>
+  </div>
+
+  <script>
+    // リンクをコピーする関数
+    function copyLink() {
+      const tempInput = document.createElement('input');
+      tempInput.value = 'https://hajimete-kosen.netlify.app/';
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      alert('リンクがコピーされました！');
+    }
+  </script>
 
 </body>
 </html>
