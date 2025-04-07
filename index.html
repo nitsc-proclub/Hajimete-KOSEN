@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>はじめてのこうせん-紹介ページ</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  
- <!-- Open Graph Tags for Facebook and other platforms -->
+
+<!-- Open Graph Tags for Facebook and other platforms -->
   <meta property="og:title" content="はじめてのこうせん - 紹介ページ" />
   <meta property="og:description" content="『はじめてのこうせん』は、令和5年度「仙台高専キャンパスプロジェクト」にて制作された学校紹介ノベルゲームです。" />
   <meta property="og:image" content="https://github.com/nitsc-proclub/Hajimete-KOSEN/raw/c772d1b6d81e2e0ef84bce10e94d3a8c38849255/title.png" />
-  <meta property="og:url" content="https://nitsc-proclub.github.io/Hajimete-KOSEN/" />
+  <meta property="og:url" content="https://hajimete-kosen.netlify.app/" />
   <meta property="og:type" content="website" />
   
   <!-- Twitter Card Tags -->
@@ -18,8 +18,8 @@
   <meta name="twitter:title" content="はじめてのこうせん - 紹介ページ" />
   <meta name="twitter:description" content="『はじめてのこうせん』は、令和5年度「仙台高専キャンパスプロジェクト」にて制作された学校紹介ノベルゲームです。" />
   <meta name="twitter:image" content="https://github.com/nitsc-proclub/Hajimete-KOSEN/raw/c772d1b6d81e2e0ef84bce10e94d3a8c38849255/title.png" />
-  <meta name="twitter:url" content="https://nitsc-proclub.github.io/Hajimete-KOSEN/" />
-  
+  <meta name="twitter:url" content="https://hajimete-kosen.netlify.app/" />
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -172,10 +172,48 @@
   }
 </style>
 
+<h2>👤 キャラクター</h2>
+<p>（※キャラクター紹介は準備中です）</p>
 
+<div class="characters">
+  <img src="https://raw.githubusercontent.com/nitsc-proclub/Hajimete-KOSEN/a926f13fbf89af135180e1779546bd32023d177c/Character/Character1.png" alt="Character 1" class="character">
+  <img src="https://raw.githubusercontent.com/nitsc-proclub/Hajimete-KOSEN/a926f13fbf89af135180e1779546bd32023d177c/Character/Character2.png" alt="Character 2" class="character">
+  <img src="https://raw.githubusercontent.com/nitsc-proclub/Hajimete-KOSEN/a926f13fbf89af135180e1779546bd32023d177c/Character/Character3.png" alt="Character 3" class="character">
+  <img src="https://raw.githubusercontent.com/nitsc-proclub/Hajimete-KOSEN/a926f13fbf89af135180e1779546bd32023d177c/Character/Character4.png" alt="Character 4" class="character">
+  <img src="https://raw.githubusercontent.com/nitsc-proclub/Hajimete-KOSEN/a926f13fbf89af135180e1779546bd32023d177c/Character/Character5.png" alt="Character 5" class="character">
+  <img src="https://raw.githubusercontent.com/nitsc-proclub/Hajimete-KOSEN/a926f13fbf89af135180e1779546bd32023d177c/Character/Character6.png" alt="Character 6" class="character">
+  <img src="https://raw.githubusercontent.com/nitsc-proclub/Hajimete-KOSEN/a926f13fbf89af135180e1779546bd32023d177c/Character/Character7.png" alt="Character 7" class="character">
+  <img src="https://raw.githubusercontent.com/nitsc-proclub/Hajimete-KOSEN/a926f13fbf89af135180e1779546bd32023d177c/Character/Character8.png" alt="Character 8" class="character">
+</div>
 
-    <h2>👤 キャラクター</h2>
-    <p>（※キャラクター紹介は準備中です）</p>
+<style>
+  .characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .character {
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    .character {
+      width: calc(25% - 20px); /* 横4列 */
+      max-width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .character {
+      width: 100%;
+    }
+  }
+</style>
+
 
 <h2>📜 クレジット</h2>
 <ul>
