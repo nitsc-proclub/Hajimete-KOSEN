@@ -12,6 +12,10 @@
 ## 🕹️ 操作方法
 - **クリック・タップ**：次に進む、ボタンを選択
 
+## 🎬 紹介動画
+[!['はじめてのこうせん紹介動画'](https://github.com/user-attachments/assets/81913ddb-84c9-49f8-b121-36de3c0dc655)](https://www.youtube.com/watch?v=QcggZJdTip0)
+
+
 ## 🖼️ スクリーンショット
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
